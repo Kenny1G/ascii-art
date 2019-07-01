@@ -42,21 +42,4 @@ public class AsciiMatrix
     public char[][] getAsciiMatrix() {
         return asciiMatrix;
     }
-
-    public void test2()
-    {
-        System.out.println("Successfully constructed pixel brightnessMatrix");
-        System.out.println("Iterating through pixel contents:");
-        for (char[] row : this.asciiMatrix)
-        {
-            for(char cell : row)
-            {
-                System.out.println(cell);
-            }
-        }
-    }
-
-
-
-
 }

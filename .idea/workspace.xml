@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Model/Ascii.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="330">
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Model/AsciiMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="127">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
                 <element signature="e#250#251#0" expanded="true" />
                 <element signature="e#300#301#0" expanded="true" />
@@ -113,8 +113,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Model/PixelData.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/BrightnessMatrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/Ascii.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/AsciiMatrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/Ascii.java" />
       </list>
     </option>
   </component>
@@ -154,6 +154,11 @@
             <path>
               <item name="asciiArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="asciiArt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="asciiArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="asciiArt" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="asciiArt" type="b2602c69:ProjectViewProjectNode" />
@@ -264,12 +269,12 @@
       <workItem from="1561644133392" duration="5451000" />
       <workItem from="1561782139553" duration="2996000" />
       <workItem from="1561869397496" duration="5452000" />
-      <workItem from="1561955164132" duration="5758000" />
+      <workItem from="1561955164132" duration="6408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19657000" />
+    <option name="totallyTimeSpent" value="20307000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,7 +287,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1436" y="144" width="1850" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.154102" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -291,14 +295,14 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29661942" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3402399" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297062" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3304253" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3304253" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3293348" />
@@ -356,16 +360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Ascii.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/BrightnessMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -389,13 +383,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/AsciiMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="127">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="e#250#251#0" expanded="true" />
             <element signature="e#300#301#0" expanded="true" />
             <element signature="e#1195#1196#0" expanded="true" />
             <element signature="e#1229#1230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Ascii.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
