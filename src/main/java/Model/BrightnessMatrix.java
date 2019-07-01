@@ -44,18 +44,18 @@ public class BrightnessMatrix
     {
         //todo: change for each loop to for loop
         int[][] brightnessMatrix = new int[pixelMatrix.length][];
-        int iterator = 0;
+        int rowCount = 0;
         for(PixelData[] row: this.pixelMatrix)
         {
             int[] brightnessRow = new int[row.length];
-            int count = 0;
+            int cellCount = 0;
             for (PixelData cell : row)
             {
-                brightnessRow[count] = cell.convertToBrightnessNumber();
-                count++;
+                brightnessRow[cellCount] = cell.convertToBrightnessNumber();
+                cellCount++;
             }
-            brightnessMatrix[iterator] = brightnessRow;
-            iterator++;
+            brightnessMatrix[rowCount] = brightnessRow;
+            rowCount++;
         }
         return brightnessMatrix;
     }
@@ -67,8 +67,8 @@ public class BrightnessMatrix
 
     public void test2()
     {
-        System.out.println("Successfully constructed pixel matrix");
-        System.out.println("Pixel matrix size:" + this.width + "x" + this.height);
+        System.out.println("Successfully constructed pixel brightnessMatrix");
+        System.out.println("Pixel brightnessMatrix size:" + this.width + "x" + this.height);
         System.out.println("Iterating through pixel contents:");
         for (int[] row : this.brightnessMatrix)
         {
