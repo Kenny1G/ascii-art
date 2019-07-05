@@ -20,11 +20,10 @@ public class PixelData
 
     public int convertToBrightnessNumber()
     {
-        int total = 0;
-        for(int i : this.pixel)
-        {
-            total+=i;
-        }
-        return total/3;
+        double R = pixel[0] * 0.2126;
+        double G = pixel[1] * 0.7152;
+        double B = pixel[2] * 0.0722;
+
+        return (int) (R +G + B);
     }
 }
