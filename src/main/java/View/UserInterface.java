@@ -10,9 +10,9 @@ public class UserInterface implements Runnable
     private JFrame frame;
     private Ascii ascii;
 
-    public UserInterface(Ascii ascii)
+    public UserInterface()
     {
-        this.ascii = ascii;
+        this.ascii = new Ascii();
     }
 
     @Override
@@ -33,28 +33,9 @@ public class UserInterface implements Runnable
         GridLayout layout = new GridLayout(1,1);
         container.setLayout(layout);
 
-        JTextArea asciiGoesHere = new JTextArea();
-        asciiGoesHere.setBackground(Color.BLACK);
-        Font terminalFont = new Font("Ubuntu Mono", Font.BOLD, 12);
-        asciiGoesHere.setFont(terminalFont);
+        AsciiPane asciiGoesHere = new AsciiPane(ascii);
 
-        JScrollPane scrollPaneForVisibility = new JScrollPane(asciiGoesHere);
-
-        for (char[] row : ascii.asciiMatrix.getAsciiMatrix())
-        {
-            String[] expandedAsciiRow = new String[row.length];
-            int count=0;
-            for (char cell : row)
-            {
-                expandedAsciiRow[count] = String.valueOf(cell) + String.valueOf(cell) + String.valueOf(cell);
-                count++;
-            }
-            asciiGoesHere.append(String.join("",expandedAsciiRow)+ '\n');
-            System.out.println(String.join("",expandedAsciiRow));
-        }
-
-        container.add(scrollPaneForVisibility);
-
+        container.add(asciiGoesHere);
     }
 
     public JFrame getFrame()

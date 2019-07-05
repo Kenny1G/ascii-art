@@ -42,7 +42,6 @@ public class BrightnessMatrix
 
     private int[][] convertPixelMatrixToBrightnessMatrix(PixelData[][] pixelMatrix)
     {
-        //todo: change for each loop to for loop
         int[][] brightnessMatrix = new int[pixelMatrix.length][];
         int rowCount = 0;
         for(PixelData[] row: this.pixelMatrix)

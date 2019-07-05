@@ -14,12 +14,11 @@ public class Ascii
 
     public Ascii()
     {
-        // todo: resize image https://www.codejava.net/java-se/graphics/how-to-resize-images-in-java
         try
         {
-            image = ImageIO.read(new File("//home/kenny/Documents/asciiArt/src/main/resources/images/ascii-pineapple.jpg"));
+            //image = ImageIO.read(new File("//home/kenny/Documents/asciiArt/src/main/resources/images/ascii-pineapple.jpg"));
             //image = ImageIO.read(new File("//home/kenny/Documents/asciiArt/src/main/resources/images/xqc.jpeg"));
-            //image = ImageIO.read(new File("//home/kenny/Pictures/cropped-1920-1080-1021182.jpg"));
+            image = ImageIO.read(new File("//home/kenny/Pictures/cropped-1920-1080-1021182.jpg"));
 
             BufferedImage smallerImage = resizeImage(image);
 
@@ -33,20 +32,6 @@ public class Ascii
         }
     }
 
-//    public void printAscii(AsciiMatrix asciiMatrix)
-//    {
-//        for (char[] row : asciiMatrix.getAsciiMatrix())
-//        {
-//            String[] expandedAsciiRow = new String[row.length];
-//            int count=0;
-//            for (char cell : row)
-//            {
-//                expandedAsciiRow[count] = String.valueOf(cell) + String.valueOf(cell) + String.valueOf(cell);
-//                count++;
-//            }
-//            System.out.println(String.join("",expandedAsciiRow));
-//        }
-//    }
 
     public static BufferedImage resizeImage(BufferedImage image)
     {
