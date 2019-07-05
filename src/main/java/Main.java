@@ -1,9 +1,13 @@
 import Model.Ascii;
+import View.UserInterface;
+
+import javax.swing.*;
 
 public class Main
 {
     public static void main(String[] args)
     {
-        Ascii image = new Ascii();
+        UserInterface ui = new UserInterface(new Ascii());
+        SwingUtilities.invokeLater(ui);
     }
 }
