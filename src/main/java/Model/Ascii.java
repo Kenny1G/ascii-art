@@ -12,26 +12,20 @@ public class Ascii
     public BrightnessMatrix brightnessMatrix;
     public AsciiMatrix asciiMatrix;
 
-    public Ascii()
+    public Ascii(File file)
     {
         try
         {
-            //image = ImageIO.read(new File("//home/kenny/Documents/asciiArt/src/main/resources/images/ascii-pineapple.jpg"));
-            //image = ImageIO.read(new File("//home/kenny/Documents/asciiArt/src/main/resources/images/xqc.jpeg"));
-            image = ImageIO.read(new File("//home/kenny/Pictures/cropped-1920-1080-1021182.jpg"));
+            image = ImageIO.read(file);
 
             BufferedImage smallerImage = resizeImage(image);
 
             brightnessMatrix = new BrightnessMatrix(smallerImage);
             asciiMatrix = new AsciiMatrix(brightnessMatrix);
-            //printAscii(asciiMatrix);
-
-
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 
     public static BufferedImage resizeImage(BufferedImage image)
     {

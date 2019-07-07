@@ -1,4 +1,3 @@
-import Model.Ascii;
 import View.UserInterface;
 
 import javax.swing.*;

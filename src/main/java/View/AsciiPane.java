@@ -16,7 +16,7 @@ public class AsciiPane extends JPanel
 
       JTextArea textArea = new JTextArea();
       textArea.setBackground(Color.BLACK);
-      Font terminalFont = new Font("Ubuntu Mono",Font.PLAIN,3);
+      Font terminalFont = new Font("Ubuntu Mono",Font.PLAIN,5);
       textArea.setFont(terminalFont);
       textArea.setEditable(false);
       JScrollPane scrollPane = new JScrollPane(textArea);
