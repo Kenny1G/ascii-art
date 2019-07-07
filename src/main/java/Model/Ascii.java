@@ -17,7 +17,6 @@ public class Ascii
         try
         {
             image = ImageIO.read(file);
-
             BufferedImage smallerImage = resizeImage(image);
 
             brightnessMatrix = new BrightnessMatrix(smallerImage);
@@ -27,7 +26,7 @@ public class Ascii
         }
     }
 
-    public static BufferedImage resizeImage(BufferedImage image)
+    private BufferedImage resizeImage(BufferedImage image)
     {
         int scaledWidth = (int) (image.getWidth()*0.5);
         int scaledHeight = (int) (image.getHeight()*0.5);

@@ -20,10 +20,10 @@ public class UserInterface implements Runnable
     public void run()
     {
         frame = new JFrame("ASCII Art");
-        frame.setPreferredSize(new Dimension(700,800));
+        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        AsciiMenu menu = new AsciiMenu();
+        AsciiMenu menu = new AsciiMenu(this);
         frame.setJMenuBar(menu.getMenuBar());
 
         createComponents(frame.getContentPane());
@@ -31,9 +31,10 @@ public class UserInterface implements Runnable
         frame.pack();
         frame.setVisible(true);
     }
-// todo: add way for user to pick file https://www.mkyong.com/swing/java-swing-jfilechooser-example/
-    private void createComponents(Container container)
+
+    public void createComponents(Container container)
     {
+        //container.removeAll();
         GridLayout layout = new GridLayout(1,1);
         container.setLayout(layout);
 
@@ -42,9 +43,12 @@ public class UserInterface implements Runnable
         container.add(asciiGoesHere);
     }
 
-    public JFrame getFrame()
+    public void disposeFrame()
     {
-        return frame;
+        frame.dispose();
     }
 
+    public void setAscii(Ascii ascii) {
+        this.ascii = ascii;
+    }
 }
