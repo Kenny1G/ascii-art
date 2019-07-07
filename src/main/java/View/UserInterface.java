@@ -13,7 +13,7 @@ public class UserInterface implements Runnable
 
     public UserInterface()
     {
-        this.ascii = new Ascii(new File("//home/kenny/Pictures/cropped-1920-1080-1021182.jpg"));
+        this.ascii = new Ascii(new File("//home/kenny/Documents/asciiArt/src/main/resources/images/cropped-1920-1080-1021182.jpg"));
     }
 
     @Override

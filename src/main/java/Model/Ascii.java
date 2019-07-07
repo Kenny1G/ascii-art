@@ -28,8 +28,8 @@ public class Ascii
 
     private BufferedImage resizeImage(BufferedImage image)
     {
-        int scaledWidth = (int) (image.getWidth()*0.5);
-        int scaledHeight = (int) (image.getHeight()*0.5);
+        int scaledWidth = (int) (image.getWidth()*0.4);
+        int scaledHeight = (int) (image.getHeight()*0.4);
 
         BufferedImage resizedImage = new BufferedImage(scaledWidth, scaledHeight, image.getType());
         Graphics2D g2d = resizedImage.createGraphics();
