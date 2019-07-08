@@ -28,7 +28,7 @@ public class AsciiPane extends JPanel
           int count=0;
           for (char cell : row)
           {
-              expandedAsciiRow[count] = String.valueOf(cell) + String.valueOf(cell) + String.valueOf(cell);
+              expandedAsciiRow[count] = String.valueOf(cell) + String.valueOf(cell);
               count++;
           }
           textArea.append(String.join("",expandedAsciiRow)+ '\n');
