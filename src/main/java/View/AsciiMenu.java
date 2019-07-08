@@ -15,7 +15,7 @@ public class AsciiMenu
         menuBar = new JMenuBar();
 
         file = new JMenu("File");
-        view = new JMenu("View");
+        //view = new JMenu("View");
 
         open = new JMenuItem("Open");
         file.add(open);
@@ -24,7 +24,7 @@ public class AsciiMenu
         open.addActionListener(openListener);
 
         menuBar.add(file);
-        menuBar.add(view);
+        //menuBar.add(view);
 
 
     }

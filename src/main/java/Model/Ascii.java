@@ -17,7 +17,7 @@ public class Ascii
         try
         {
             image = ImageIO.read(file);
-            BufferedImage smallerImage = resizeImage(image);
+            BufferedImage smallerImage = resizeImage(image,1);
 
             brightnessMatrix = new BrightnessMatrix(smallerImage);
             asciiMatrix = new AsciiMatrix(brightnessMatrix);
@@ -26,10 +26,10 @@ public class Ascii
         }
     }
 
-    private BufferedImage resizeImage(BufferedImage image)
+    private BufferedImage resizeImage(BufferedImage image, double scale)
     {
-        int scaledWidth = (int) (image.getWidth()*0.4);
-        int scaledHeight = (int) (image.getHeight()*0.4);
+        int scaledWidth = (int) (image.getWidth()*scale);
+        int scaledHeight = (int) (image.getHeight()*scale);
 
         BufferedImage resizedImage = new BufferedImage(scaledWidth, scaledHeight, image.getType());
         Graphics2D g2d = resizedImage.createGraphics();
