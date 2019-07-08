@@ -13,7 +13,6 @@ public class UserInterface implements Runnable
 
     public UserInterface()
     {
-        this.ascii = new Ascii(this.getClass().getResourceAsStream("img/cropped-1920-1080-1021182.jpg"));
     }
 
     @Override

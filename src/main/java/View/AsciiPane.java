@@ -22,16 +22,23 @@ public class AsciiPane extends JPanel
       textArea.setEditable(false);
       JScrollPane scrollPane = new JScrollPane(textArea);
 
-      for (char[] row : ascii.asciiMatrix.getAsciiMatrix())
+      if(ascii == null)
       {
-          String[] expandedAsciiRow = new String[row.length];
-          int count=0;
-          for (char cell : row)
+          textArea.setFont(new Font(Font.MONOSPACED,Font.BOLD,60));
+          textArea.setText("PLEASE OPEN AN IMAGE");
+      }else
+      {
+          for (char[] row : ascii.asciiMatrix.getAsciiMatrix())
           {
-              expandedAsciiRow[count] = String.valueOf(cell) + String.valueOf(cell);
-              count++;
+              String[] expandedAsciiRow = new String[row.length];
+              int count=0;
+              for (char cell : row)
+              {
+                  expandedAsciiRow[count] = String.valueOf(cell) + String.valueOf(cell);
+                  count++;
+              }
+              textArea.append(String.join("",expandedAsciiRow)+ '\n');
           }
-          textArea.append(String.join("",expandedAsciiRow)+ '\n');
       }
 
       add(scrollPane);

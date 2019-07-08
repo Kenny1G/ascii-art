@@ -32,11 +32,7 @@ public class openMenuListener implements ActionListener
         int returnValue = jfc.showOpenDialog(null);
         if (returnValue == JFileChooser.APPROVE_OPTION)
         {
-            try {
-                mainUI.setAscii(new Ascii(new FileInputStream(jfc.getSelectedFile())));
-            } catch (FileNotFoundException ex) {
-                ex.printStackTrace();
-            }
+            mainUI.setAscii(new Ascii(jfc.getSelectedFile()));
             mainUI.disposeFrame();
             mainUI.run();
         }

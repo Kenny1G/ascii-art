@@ -13,7 +13,7 @@ public class Ascii
     public BrightnessMatrix brightnessMatrix;
     public AsciiMatrix asciiMatrix;
 
-    public Ascii(InputStream file)
+    public Ascii(File file)
     {
         try
         {
