@@ -16,7 +16,7 @@ public class AsciiPane extends JPanel
 
       JTextArea textArea = new JTextArea();
       textArea.setBackground(Color.BLACK);
-      Font terminalFont = new Font("Ubuntu Mono",Font.BOLD,1);
+      Font terminalFont = new Font(Font.MONOSPACED,Font.BOLD,1);
       textArea.setFont(terminalFont);
       textArea.setForeground(Color.WHITE);
       textArea.setEditable(false);
