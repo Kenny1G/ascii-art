@@ -13,14 +13,14 @@ public class UserInterface implements Runnable
 
     public UserInterface()
     {
-        this.ascii = new Ascii(new File("//home/kenny/Documents/asciiArt/src/main/resources/images/cropped-1920-1080-1021182.jpg"));
+        this.ascii = new Ascii(this.getClass().getResourceAsStream("img/cropped-1920-1080-1021182.jpg"));
     }
 
     @Override
     public void run()
     {
         frame = new JFrame("ASCII Art");
-        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        frame.setPreferredSize(new Dimension(1500,1000));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         AsciiMenu menu = new AsciiMenu(this);
@@ -34,7 +34,6 @@ public class UserInterface implements Runnable
 
     public void createComponents(Container container)
     {
-        //container.removeAll();
         GridLayout layout = new GridLayout(1,1);
         container.setLayout(layout);
 

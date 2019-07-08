@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class Ascii
 {
@@ -12,7 +13,7 @@ public class Ascii
     public BrightnessMatrix brightnessMatrix;
     public AsciiMatrix asciiMatrix;
 
-    public Ascii(File file)
+    public Ascii(InputStream file)
     {
         try
         {
@@ -25,6 +26,7 @@ public class Ascii
             e.printStackTrace();
         }
     }
+
 
     private BufferedImage resizeImage(BufferedImage image, double scale)
     {

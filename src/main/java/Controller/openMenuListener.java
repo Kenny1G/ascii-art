@@ -8,6 +8,9 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.net.MalformedURLException;
 
 public class openMenuListener implements ActionListener
 {
@@ -29,7 +32,11 @@ public class openMenuListener implements ActionListener
         int returnValue = jfc.showOpenDialog(null);
         if (returnValue == JFileChooser.APPROVE_OPTION)
         {
-            mainUI.setAscii(new Ascii(jfc.getSelectedFile()));
+            try {
+                mainUI.setAscii(new Ascii(new FileInputStream(jfc.getSelectedFile())));
+            } catch (FileNotFoundException ex) {
+                ex.printStackTrace();
+            }
             mainUI.disposeFrame();
             mainUI.run();
         }
