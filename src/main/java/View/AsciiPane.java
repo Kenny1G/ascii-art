@@ -38,6 +38,7 @@ public class AsciiPane extends JPanel
                   count++;
               }
               textArea.append(String.join("",expandedAsciiRow)+ '\n');
+              System.out.println(String.join("",expandedAsciiRow)+ '\n');
           }
       }
 

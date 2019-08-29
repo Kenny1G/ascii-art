@@ -18,7 +18,7 @@ public class Ascii
         try
         {
             image = ImageIO.read(file);
-            BufferedImage smallerImage = resizeImage(image,1);
+            BufferedImage smallerImage = resizeImage(image,0.1);
 
             brightnessMatrix = new BrightnessMatrix(smallerImage);
             asciiMatrix = new AsciiMatrix(brightnessMatrix);
